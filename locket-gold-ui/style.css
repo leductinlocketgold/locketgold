@@ -1,0 +1,114 @@
+/* Toàn bộ body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fef3c7, #fbbf24, #f59e0b);
+    background-size: 200% 200%;
+    animation: gradientMove 6s infinite alternate;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 180px; /* Kích thước logo vừa phải */
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  /* Tiêu đề */
+  h1 {
+    font-size: 28px; /* Kích thước vừa phải */
+    font-weight: 600; /* Chữ không quá đậm */
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 16px; /* Kích thước chữ phụ đề */
+    font-weight: 400; /* Chữ nhẹ nhàng, dễ đọc */
+    color: #555555;
+  }
+  
+  /* Container chính */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  /* Container biểu mẫu */
+  .form-container {
+    max-width: 380px; /* Giới hạn chiều rộng */
+    width: 100%; /* Chiếm toàn bộ chiều ngang trong khung */
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* Tiêu đề biểu mẫu */
+  form h2 {
+    font-size: 20px;
+    font-weight: 600; /* Chữ vừa đủ đậm */
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  /* Input và Textarea */
+  form input, form textarea {
+    width: 100%;
+    padding: 12px; /* Khoảng cách vừa đủ */
+    margin-bottom: 15px; /* Khoảng cách giữa các trường */
+    border: 1px solid #ccc; /* Viền nhẹ nhàng */
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400; /* Chữ vừa phải */
+    color: #333333;
+    box-sizing: border-box; /* Đảm bảo không bị tràn */
+  }
+  
+  /* Placeholder */
+  form input::placeholder,
+  form textarea::placeholder {
+    font-weight: 400; /* Placeholder nhẹ nhàng */
+    color: #999999;
+  }
+  
+  /* Nút gửi */
+  form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px; /* Kích thước chữ nút vừa phải */
+    font-weight: 600; /* Chữ đậm vừa đủ */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  form button:hover {
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    transform: translateY(-2px); /* Hiệu ứng hover nâng nút */
+  }
+  
+  /* Hiệu ứng nền */
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
